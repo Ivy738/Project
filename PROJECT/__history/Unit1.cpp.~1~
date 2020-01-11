@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma link "TABPGDLG"
+#pragma resource "*.dfm"
+TPagesDlg1 *PagesDlg1;
+//---------------------------------------------------------------------------
+__fastcall TPagesDlg1::TPagesDlg1(TComponent* Owner)
+	: TPagesDlg(Owner)
+{
+}
+//---------------------------------------------------------------------------

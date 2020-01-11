@@ -1,0 +1,186 @@
+object FrmBooking: TFrmBooking
+  Left = 0
+  Top = 0
+  Caption = 'Booking'
+  ClientHeight = 315
+  ClientWidth = 368
+  Color = clActiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LblMakeApp: TLabel
+    Left = 8
+    Top = 177
+    Width = 210
+    Height = 19
+    Caption = 'Book For An Appointment'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblDate: TLabel
+    Left = 32
+    Top = 205
+    Width = 23
+    Height = 13
+    Caption = 'Date'
+  end
+  object LblTime: TLabel
+    Left = 33
+    Top = 237
+    Width = 22
+    Height = 13
+    Caption = 'Time'
+  end
+  object Label1: TLabel
+    Left = 272
+    Top = 229
+    Width = 3
+    Height = 13
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 20
+    Width = 121
+    Height = 25
+    Caption = 'Check For Availability'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object MemChkAvail: TMemo
+    Left = 8
+    Top = 51
+    Width = 199
+    Height = 111
+    TabOrder = 1
+    Visible = False
+  end
+  object BtnSaveApp: TButton
+    Left = 8
+    Top = 267
+    Width = 113
+    Height = 25
+    Caption = 'Save AppointMent'
+    TabOrder = 2
+    OnClick = BtnSaveAppClick
+  end
+  object PnlCheck: TPanel
+    Left = 232
+    Top = 20
+    Width = 108
+    Height = 121
+    TabOrder = 3
+    object stsbrName: TStatusBar
+      Left = 1
+      Top = 101
+      Width = 106
+      Height = 19
+      Panels = <
+        item
+          Text = 'Dr Phuthego'
+          Width = 50
+        end>
+    end
+  end
+  object stsbrTime: TStatusBar
+    Left = 0
+    Top = 296
+    Width = 368
+    Height = 19
+    Panels = <
+      item
+        Width = 150
+      end
+      item
+        Width = 50
+      end>
+  end
+  object cmbDay: TComboBox
+    Left = 94
+    Top = 202
+    Width = 35
+    Height = 21
+    TabOrder = 5
+    Items.Strings = (
+      '01'
+      '02'
+      '03'
+      '04'
+      '05'
+      '06'
+      '07'
+      '08'
+      '09'
+      '10'
+      '11'
+      '12'
+      '13'
+      '14'
+      '15'
+      '16'
+      '17'
+      '18'
+      '19'
+      '20'
+      '21'
+      '22'
+      '23'
+      '24'
+      '25'
+      '26'
+      '27'
+      '28'
+      '29'
+      '30'
+      '31')
+  end
+  object cmbMonth: TComboBox
+    Left = 126
+    Top = 202
+    Width = 57
+    Height = 21
+    TabOrder = 6
+  end
+  object cmbYear: TComboBox
+    Left = 181
+    Top = 202
+    Width = 50
+    Height = 21
+    TabOrder = 7
+  end
+  object cmbTime: TComboBox
+    Left = 94
+    Top = 229
+    Width = 137
+    Height = 21
+    TabOrder = 8
+    Items.Strings = (
+      '09h00_09h30'
+      '09h40_10h10'
+      '10h20_10h50'
+      '11h00_11h30'
+      '11h40_12h10'
+      '13h00_13h30'
+      '13h40_14h10'
+      '14h20_14h50'
+      '15h00_15h30'
+      '15h40_16h10'
+      '')
+  end
+  object Edit1: TEdit
+    Left = 237
+    Top = 175
+    Width = 121
+    Height = 21
+    TabOrder = 9
+  end
+end

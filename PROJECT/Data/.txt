@@ -1,0 +1,5 @@
+Patient's File
+'s	File
+================================
+Name:	Surname:	Contact Numbers:
+Address:	Age:	Gender:	Disease

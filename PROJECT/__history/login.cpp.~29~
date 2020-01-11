@@ -1,0 +1,74 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "login.h"
+#include "file.h"
+#include "Surgery.h";
+#include "Check.h"
+#include "jpeg.hpp"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFrmLogin *FrmLogin;
+//---------------------------------------------------------------------------
+__fastcall TFrmLogin::TFrmLogin(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TFrmLogin::BtnNewRegClick(TObject *Sender)
+{
+	 FrmFile->Show();
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TFrmLogin::btnLogInClick(TObject *Sender)
+{
+  if(EdtPName->Text == "")
+  {
+	  ShowMessage("Please Enter you UserName");
+	  EdtPName->SetFocus();
+  }
+   /*String fn = ListBox1->Items->LoadFromFile("..\\..\\Password\\"+EdtPName->Text+".txt");
+   if(EdtPName->Text !=	fn)
+	 {
+		ShowMessage("Make sure you enter the correct username Or" +"\r\n" + "If you are a new user Go to Register");
+		 EdtPName->SetFocus();
+     }*/
+   else
+	ListBox1->Items->LoadFromFile("..\\..\\Password\\"+EdtPName->Text+".txt");
+	ListBox1->ItemIndex = 2;
+	AnsiString temp,Nm,Pw;
+	temp = ListBox1->Items->Strings[ListBox1->ItemIndex];
+
+	Nm= temp.SubString(1,temp.Pos('\t')-1);
+	temp= temp.Delete(1,temp.Pos('\t'));
+	Pw = temp;
+
+   if((EdtPName->Text == Nm) && (EdtPasword->Text == Pw))
+   {
+   //	FrmBooking->Show();
+    ShowMessage("Well Done");
+   }
+	else
+	MessageDlg("Your are not a Registered User/Patient",mtWarning,TMsgDlgButtons()<<mbOK,0);
+	EdtPName->SetFocus();
+	EdtPasword->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmLogin::FormShow(TObject *Sender)
+{
+	  StsBrLogin->Panels->Items[0]->Text = FormatDateTime("dd mmmm yyyy-hh:mm",Now());
+
+	  TImage* myImg = new TImage(this);
+	  myImg->Parent = PnlLogin;
+	  myImg->Stretch = true;
+	  myImg->Picture->LoadFromFile("..\\..\\img1.jpg");
+}
+//---------------------------------------------------------------------------
+

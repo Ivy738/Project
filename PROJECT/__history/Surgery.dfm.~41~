@@ -1,0 +1,186 @@
+object FrmDrPhuthego: TFrmDrPhuthego
+  Left = 0
+  Top = 0
+  Caption = 'DR PHUTHEGO'#39'SURGERY'
+  ClientHeight = 345
+  ClientWidth = 438
+  Color = clActiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblConsHours: TLabel
+    Left = 32
+    Top = 181
+    Width = 155
+    Height = 19
+    Hint = 'Consultation Hours'
+    Caption = 'Consultation Hours'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblmon: TLabel
+    Left = 32
+    Top = 210
+    Width = 143
+    Height = 16
+    Caption = 'Mon to fri 8am to 4pm'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object tta: TLabel
+    Left = 32
+    Top = 232
+    Width = 161
+    Height = 16
+    Caption = 'Sarturdays  8am to  2pm'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 0
+    Top = 0
+    Width = 438
+    Height = 25
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Welcome to DR Phuthego'#39'Surgery'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ExplicitWidth = 354
+  end
+  object Label2: TLabel
+    Left = 32
+    Top = 53
+    Width = 107
+    Height = 19
+    Caption = 'DR Phuthego'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 80
+    Width = 121
+    Height = 16
+    Caption = 'General Practioner'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 32
+    Top = 102
+    Width = 175
+    Height = 16
+    Caption = 'MBBS,MS(SURG.)FAIS,FMAS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 32
+    Top = 127
+    Width = 71
+    Height = 16
+    Caption = '918 Block F'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 32
+    Top = 162
+    Width = 32
+    Height = 16
+    Caption = '0152'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 32
+    Top = 146
+    Width = 79
+    Height = 16
+    Caption = 'Soshanguve'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 326
+    Width = 438
+    Height = 19
+    Panels = <
+      item
+        Width = 150
+      end
+      item
+        Width = 50
+      end>
+  end
+  object BtnBook: TButton
+    Left = 144
+    Top = 279
+    Width = 153
+    Height = 33
+    Caption = 'Book an Appointment'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = BtnBookClick
+  end
+  object Panel1: TPanel
+    Left = 322
+    Top = 35
+    Width = 103
+    Height = 108
+    TabOrder = 2
+  end
+end

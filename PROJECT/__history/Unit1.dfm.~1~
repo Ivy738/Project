@@ -1,0 +1,5 @@
+inherited PagesDlg1: TPagesDlg1
+  Caption = 'PagesDlg1'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

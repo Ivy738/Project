@@ -1,0 +1,5 @@
+Patient's File
+Matlhodi's	File
+================================
+Name:Matlhodi	Surname:Lesupi	Contact Numbers:0120350268
+Address:205 motla 366	Age:15	Gender:female	DiseaseLow\High blood

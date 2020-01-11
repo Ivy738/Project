@@ -1,0 +1,5 @@
+Patient's File
+ditebogo's	File
+================================
+Name:ditebogo	Surname:Letsatsi	Contact Numbers:0112583698
+Address:203 beruit 125	Age:25	Gender:Male	Disease:Other

@@ -1,0 +1,5 @@
+Patient's File
+nnnmm's	File
+================================
+Name:nnnmm	Surname:mmmmm	Contact Numbers:0258564885
+Address:355 nnnnn 258	Age:36	Gender:Male	Disease:Cancer

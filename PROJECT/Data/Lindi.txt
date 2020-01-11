@@ -1,0 +1,5 @@
+Patient's File
+Lindi's	File
+================================
+Name:Lindi	Surname:Mnisi	Contact Numbers:0125858697
+Address:25 moloto str	Age:36	Gender:Female	Disease:Low\High blood

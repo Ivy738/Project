@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#ifndef viewH
+#define viewH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFrmView : public TForm
+{
+__published:	// IDE-managed Components
+	TMemo *MemView;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFrmView(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFrmView *FrmView;
+//---------------------------------------------------------------------------
+#endif

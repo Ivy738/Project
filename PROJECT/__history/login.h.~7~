@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------
+
+#ifndef loginH
+#define loginH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TFrmLogin : public TForm
+{
+__published:	// IDE-managed Components
+	TButton *BtnNewReg;
+	TButton *btnLogIn;
+	TLabel *LblPatientBook;
+	TLabel *lblPname;
+	TLabel *Label2;
+	TEdit *EdtPName;
+	TEdit *EdtPasword;
+	TPanel *PnlLogin;
+	TStatusBar *StsBrLogin;
+	TStatusBar *StatusBar1;
+	TListBox *ListBox1;
+	void __fastcall BtnNewRegClick(TObject *Sender);
+	void __fastcall btnLogInClick(TObject *Sender);
+	void __fastcall FormShow(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFrmLogin(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFrmLogin *FrmLogin;
+//---------------------------------------------------------------------------
+#endif
